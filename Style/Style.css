@@ -154,15 +154,14 @@ main a:hover{
     
 }
 
-
-    
-
-
-article  video{
+article > video{
     width: 500px;
     display: flex;
+    justify-content: center;
     margin: auto; 
+    white-space: nowrap
 }
+
 
 aside{
   background-color: var(--cor1);
@@ -202,3 +201,9 @@ footer a:hover{
     text-decoration: underline;
     color: var(--cor1);
 }
+
+@media screen and (max-width: 500px) {
+        video{
+            max-width: 240px; /* Largura máxima reduzida para dispositivos móveis */
+        }
+    }
